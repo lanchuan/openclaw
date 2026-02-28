@@ -587,7 +587,7 @@ export const FIELD_HELP: Record<string, string> = {
   "tools.message.broadcast.enabled": "Enable broadcast action (default: true).",
   "tools.web.search.enabled": "Enable the web_search tool (requires a provider API key).",
   "tools.web.search.provider":
-    'Search provider ("brave", "perplexity", "grok", "gemini", or "kimi"). Auto-detected from available API keys if omitted.',
+    'Search provider ("brave", "perplexity", "grok", "gemini", "kimi", or "tavily"). Auto-detected from available API keys if omitted.',
   "tools.web.search.apiKey": "Brave Search API key (fallback: BRAVE_API_KEY env var).",
   "tools.web.search.maxResults": "Default number of results to return (1-10).",
   "tools.web.search.timeoutSeconds": "Timeout in seconds for web_search requests.",
@@ -602,6 +602,15 @@ export const FIELD_HELP: Record<string, string> = {
   "tools.web.search.kimi.baseUrl":
     'Kimi base URL override (default: "https://api.moonshot.ai/v1").',
   "tools.web.search.kimi.model": 'Kimi model override (default: "moonshot-v1-128k").',
+  "tools.web.search.tavily.apiKey":
+    "Tavily API key (fallback: TAVILY_API_KEY env var). Get one at https://tavily.com",
+  "tools.web.search.tavily.maxResults": "Maximum number of results to return (1-20, default: 5).",
+  "tools.web.search.tavily.includeAnswer":
+    "Include an AI-generated answer in the response (default: true).",
+  "tools.web.search.tavily.includeRawContent":
+    "Include raw HTML content in the response (default: false).",
+  "tools.web.search.tavily.searchDepth":
+    'Search depth: "basic" (faster) or "advanced" (more comprehensive, default: "basic").',
   "tools.web.search.perplexity.apiKey":
     "Perplexity or OpenRouter API key (fallback: PERPLEXITY_API_KEY or OPENROUTER_API_KEY env var).",
   "tools.web.search.perplexity.baseUrl":
